@@ -1,16 +1,47 @@
 @import "~bootstrap/scss/bootstrap.scss";
+.container{
+    padding-top:60px;
+    padding-bottom: 55px;
+  
+    
+    
+}
+.message{
+    animation:blinkingText 1.5s 10;
+    font-size:50px;
+  
 
+}
+@keyframes blinkingText{
+	0%{		color: #000;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #000;	}
+}
 .g-rows{
+    
     display: flex;
-    background:cyan;
+   
     margin :0 auto;
-    width:250px;
+    width:600px;
+
     justify-content: center;
 }
 
 .cells{
-    width:80px;
-    height:80px;
-    border: 1px solid black;
+    background:cyan;
+    width:100px;
+    height:100px;
+    border: 2px solid black ;
     padding-top: 30px;
+    padding-left: 40px;
+    font-size:20px;
+    font-weight:bolder;
+   
+   
+}
+.clicker{
+    background: green;
+    
 }
